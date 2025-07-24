@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actualités - Minecraft</title>
+    <link rel="stylesheet" href="design.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://res.cloudinary.com/dozgo2wq1/image/upload/v1753350450/minecraft_logo_rjz6dt.svg"
+        alt="Minecraft Logo"
+        class="logo"
+      />
+      <nav>
+        <a href="index.html">ACCUEIL</a>
+        <a href="games.html">JEUX</a>
+        <a href="actualites.html">ACTUALITÉS</a>
+      </nav>
+      <button class="btn-login" onclick="toggleLogin()">SE CONNECTER</button>
+    </header>
+    <section class="news">
+      <h2>DERNIÈRES ACTUALITÉS</h2>
+      <div class="news-list">
+        <div class="news-item">
+          <img
+            src="https://res.cloudinary.com/dozgo2wq1/image/upload/v1753350450/endcity-header_neywje.avif"
+            alt="Minecraft 1.21"
+          />
+          <div class="news-content">
+            <h3>Building Blocks: End City</h3>
+            <p>The only place you’ll find an elytra</p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <img
+            src="https://res.cloudinary.com/dozgo2wq1/image/upload/v1753350450/MINECRAFT_SWA_1170x500_RGB_wcrkdb.avif"
+            alt="Minecraft Live 2025"
+          />
+          <div class="news-content">
+            <h3>Minecraft x Swarovski</h3>
+            <p>Adventures crystallized for crafty collectors</p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <img
+            src="https://res.cloudinary.com/dozgo2wq1/image/upload/v1753350450/Dwellers2_HeaderFinal_-_Copie_widpo3.jpg"
+            alt="Minecraft Education"
+          />
+          <div class="news-content">
+            <h3>LET’S PLAY: DWELLERS 2.0</h3>
+            <p>Will this horror add-on be too scary for us? (yes)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-links">
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Conditions d'utilisation</a>
+        <a href="#">Contact</a>
+      </div>
+      <p>&copy; 2025 Mojang Studios / Microsoft</p>
+    </footer>
+
+    <script src="animation.js"></script>
+    <div id="loginPopup" class="login-popup">
+      <form class="login-form">
+        <h3>Connexion</h3>
+        <input type="text" placeholder="Nom d'utilisateur" required />
+        <input type="password" placeholder="Mot de passe" required />
+        <button type="submit">Connexion</button>
+        <button type="button" onclick="toggleLogin()">Fermer</button>
+      </form>
+    </div>
+  </body>
+</html>
